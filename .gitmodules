@@ -1,0 +1,15 @@
+[submodule "provisioning/roles/php-fpm"]
+	path = provisioning/roles/php-fpm
+	url = git@github.com:ivang-ansible-roles/php-fpm.git
+[submodule "provisioning/roles/typo3"]
+	path = provisioning/roles/typo3
+	url = git@github.com:ivang-ansible-roles/typo3.git
+[submodule "provisioning/roles/common"]
+	path = provisioning/roles/common
+	url = git@github.com:ivang-ansible-roles/common.git
+[submodule "provisioning/roles/nginx"]
+	path = provisioning/roles/nginx
+	url = git@github.com:ivang-ansible-roles/nginx.git
+[submodule "provisioning/roles/mariadb"]
+	path = provisioning/roles/mariadb
+	url = git@github.com:ivang-ansible-roles/mariadb.git

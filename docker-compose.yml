@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+## Ansible Container #############################
+  ansible:
+    image: williamyeh/ansible:ubuntu16.04
+    volumes:
+      - ./:/tmp/my-playbook
+      - ~/.ssh:/tmp/my-keys
+    working_dir: /tmp/my-playbook
+    command: bash -c "chmod +x ./bin/* && bin/docker-run.sh"

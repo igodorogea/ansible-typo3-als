@@ -1,0 +1,4 @@
+.idea
+
+provisioning/inventory/*
+!provisioning/inventory/dev.example

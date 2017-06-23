@@ -1,0 +1,20 @@
+---
+- hosts: als
+  become: yes
+
+  pre_tasks:
+    - set_fact: ansible_distribution_major_version=6
+      when: ansible_distribution == "Amazon" and ansible_distribution_major_version == "NA"
+
+  roles:
+#    - common
+#    - mariadb
+#    - php-fpm
+    - nginx
+    - role: typo3
+      typo3_domain_name: 'typo3-demo.ivang.xyz'
+      typo3_root: 'typo3-demo'
+      typo3_root_mode: clean
+      typo3_db_name: 'typo3_demo_db'
+      typo3_db_user: 'typo3_demo_user'
+      typo3_db_mode: clean
