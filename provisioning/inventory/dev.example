@@ -1,5 +1,3 @@
 [als]
-# Amazon Linux AMI
-#123.123.123.123 ansible_user=ec2-user
-# Ubuntu imgae
+# Ubuntu image
 #123.123.123.124 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python
